@@ -51,10 +51,12 @@ void Run() {
     );
 
     std::string response;
-
-    std::string user = "ivan";
-    std::string password = "qwe";
-
+    std::string user;
+    std::string password;
+    std::cout << "User: ";
+    std::cin >> user;
+    std::cout << "Password: ";
+    std::cin >> password;
     response = client.sendRequest(user,password);
     std::cout << "Answer received: User - " << user << " Password - " << password << " : " << response << std::endl;
 }
